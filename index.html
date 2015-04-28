@@ -30,12 +30,16 @@
   </div>
 
   <div data-role="main" class="ui-content">
-    <div id="botones" data-role="controlgroup" style="width:20%" data-type="vertical" >
+    <div id="botones" data-role="controlgroup" data-type="vertical" 
+    align="center" >
+    <div style="width:20%">
      <input type="button" id="btnvibrar" value="Vibrar">
      <input type="button" id="btnbeep" value="Beep">
-      <input type="button" id="btnbarrer" value="Barrer">
+       <a href="#barrer" id="btndatos"
+    class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all">Barrer</a>
      <input type="button" id="btneventos" value="Eventos">
-    </div>   <!--Fin botoenes-->
+    </div>
+   </div>   <!--Fin botones-->
   </div>
 
   <div data-role="footer">
@@ -43,6 +47,30 @@
   </div>
  </div>  
  <!-- Principal -->
+
+<!-- Barrer -->
+ <div data-role="page" id="barrer" >   
+  <div data-role="header">
+    <h1>Barrer</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  
+   <div id="izquierda" style="text-align:center; background-color:#06F; color:#FFF">
+    <h1>Izquierda</h1> 
+   </div>
+   
+   <div id="derecha" style="text-align:center; background-color:#099; color:#FFF">
+    <h1>Derecha</h1>
+   </div>
+   
+  </div>
+
+  <div data-role="footer">
+    <h1>@Said Galindo Flores</h1>
+  </div>
+ </div>  
+ <!-- FinBarrer -->
 
  </body>
 </html> 

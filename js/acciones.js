@@ -4,13 +4,22 @@ document.addEventListener("deviceready",function(){
 	$('#bntvibrar').on('tap',
 	 function(){
 		 navigator.vibrate(1000);
-	 }); //tap a btnvibrar
+	 }); //tap 'btnvibrar'
 	 
 	 $('#btnbeep').on('tap',
 	  function(){
 		 navigator.beep(1)
-	 });
+	 });//Tap 'btnbeep'
+	 
+	$('#izquierda').on('swipeleft',
+	function(){
+		alert("!ehK");
+	});//Barrido izquierda
 	
+	$('#derecha').on('swiperight',
+	function(){
+		alert("Khe¡");
+	});//Barrido izquierda
 }); 
 });
 
