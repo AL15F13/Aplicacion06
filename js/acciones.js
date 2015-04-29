@@ -8,9 +8,9 @@ document.addEventListener("deviceready",function(){
 	 
 	 $('#btnbeep').on('tap',
 	  function(){
-		 navigator.beep(1)
+		 navigator.notification.beep(1)
 	 });//Tap 'btnbeep'
-	 
+	   
 	$('#izquierda').on('swipeleft',
 	function(){
 		alert("!ehK");
