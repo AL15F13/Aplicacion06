@@ -13,13 +13,25 @@ document.addEventListener("deviceready",function(){
 	   
 	$('#izquierda').on('swipeleft',
 	function(){
-		alert("!ehK");
+		alert("Izquierda");
 	});//Barrido izquierda
 	
 	$('#derecha').on('swiperight',
 	function(){
-		alert("Khe¡");
+		alert("Derecha");
 	});//Barrido izquierda
+	
+	document.addEventListener("pause", function (){
+		$('#listado').append("<p>Aplicación detenida</p>");
+	});//Pause
+	
+	document.addEventListener("resume", function (){
+		$('#listado').append("<p>Aplicación resumida</p>");
+	});//Resume
+	
+	$(window).on('orientationchange', function(e){
+		$('#listado').append("<p>Orientación: " + e.orientation + "</p>");
+	});//Cambio de orientación
 }); 
 });
 
